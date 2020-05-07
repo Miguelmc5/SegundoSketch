@@ -27,30 +27,22 @@ public class Imagenes extends PApplet {
         smooth(8);
     }
     // declaramos el objeto para poder tener acceso en toda la clase
-    PImage theChild;
+    PImage alpaca2;
     // en este metodo tambien podemos meter configuraciones iniciales de nuestro sketch
     @Override
     public void setup() {
-        // pintamos la ventana según rgb
-        // hay muchas paginas que nos dan los colores en rgb
-        // esta es una de ellas https://htmlcolorcodes.com/es/
-        // fondo de la ventana
-        background(200,100,0);
-        // Necesitamos darle la ruta absoluta
-        // la función dataPath nos crea la ruta al directorio
-        // data en la raíz del proyecto
-        // inicializamos el objeto con la imagen del directorio 'data'
-        theChild = loadImage(dataPath("TheChild.png"));
-
+        // Quito el background para que se refresque el fondo y
+        // no imprima la imagen con cada movimiento del ratón
+        alpaca2 = loadImage(dataPath("alpaca2.jpg"));
 
     }
-
     // método principal.
     // ACUERDATE: esto se repite en bucle indefinidamente
     @Override
     public void draw() {
+        background(200,100,0);
         // cargamos la imagen en la ventana en cada iteración del bucle
-        // posicionamos la imagen segun el movimiento del raton
-        image(theChild,mouseX,mouseY);
+        // posicionamos la imagen segun el movimiento del ratón
+        image(alpaca2,mouseX,mouseY);
     }
 }
