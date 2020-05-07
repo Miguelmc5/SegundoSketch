@@ -41,6 +41,10 @@ public class Imagenes extends PApplet {
     @Override
     public void draw() {
         background(200,100,0);
+        
+        // cambia el color del tono de la imagen (en este caso a rojo)
+        tint(255,0,0);
+        
         // cargamos la imagen en la ventana en cada iteración del bucle
         // posicionamos la imagen segun el movimiento del ratón
         image(alpaca2,mouseX,mouseY);
