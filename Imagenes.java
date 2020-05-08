@@ -53,7 +53,7 @@ public class Imagenes extends PApplet {
         background(0);
 
         if(mousePressed){
-
+// ponemos random en los colores para que vaya cambiando aletoriamente de color de fondo cuando se mantiene clicado
             background(random(255),random(255),random(255));
 
             image(bola,770,2);
@@ -65,16 +65,6 @@ public class Imagenes extends PApplet {
             image(brazo2,mouseX+500,-600);
 
         }
-
-
-
-
-        //cambiamos el tono de color de la imagen(en este caso en rojo)
-
-
-        // cargamos la imagen en la ventana en cada iteración del bucle
-        // posicionamos la imagen segun el movimiento del ratón
-
 
     }
 }
